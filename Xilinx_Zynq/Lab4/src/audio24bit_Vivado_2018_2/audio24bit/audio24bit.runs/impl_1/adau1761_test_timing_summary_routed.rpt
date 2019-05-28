@@ -1,0 +1,1470 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Apr 30 06:40:07 2019
+| Host         : DESKTOP-MNL47F2 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file adau1761_test_timing_summary_routed.rpt -pb adau1761_test_timing_summary_routed.pb -rpx adau1761_test_timing_summary_routed.rpx -warn_on_violation
+| Design       : adau1761_test
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 12 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 11 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     12.797        0.000                      0                 1394        0.071        0.000                      0                 1394        3.000        0.000                       0                   707  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_100     {0.000 5.000}      10.000          100.000         
+  clkfbout  {0.000 25.000}     50.000          20.000          
+  clkout0   {0.000 10.417}     20.833          48.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_100                                                                                                                                                         3.000        0.000                       0                     1  
+  clkfbout                                                                                                                                                     47.845        0.000                       0                     3  
+  clkout0          12.797        0.000                      0                 1394        0.071        0.000                      0                 1394        9.437        0.000                       0                   703  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_100
+  To Clock:  clk_100
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_100
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk_100 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout
+  To Clock:  clkfbout
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       47.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { i_clocking/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         50.000      47.845     BUFGCTRL_X0Y1    i_clocking/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKFBOUT
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkout0
+  To Clock:  clkout0
+
+Setup :            0  Failing Endpoints,  Worst Slack       12.797ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.071ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.437ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             12.797ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.712ns  (logic 2.702ns (35.038%)  route 5.010ns (64.962%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.428ns = ( 19.405 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.650     6.878    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X0Y20          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.645    19.405    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X0Y20          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[0]/C
+                         clock pessimism              0.577    19.982    
+                         clock uncertainty           -0.138    19.844    
+    SLICE_X0Y20          FDRE (Setup_fdre_C_CE)      -0.169    19.675    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[0]
+  -------------------------------------------------------------------
+                         required time                         19.675    
+                         arrival time                          -6.878    
+  -------------------------------------------------------------------
+                         slack                                 12.797    
+
+Slack (MET) :             12.797ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.712ns  (logic 2.702ns (35.038%)  route 5.010ns (64.962%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.428ns = ( 19.405 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.650     6.878    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X0Y20          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.645    19.405    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X0Y20          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[2]/C
+                         clock pessimism              0.577    19.982    
+                         clock uncertainty           -0.138    19.844    
+    SLICE_X0Y20          FDRE (Setup_fdre_C_CE)      -0.169    19.675    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[2]
+  -------------------------------------------------------------------
+                         required time                         19.675    
+                         arrival time                          -6.878    
+  -------------------------------------------------------------------
+                         slack                                 12.797    
+
+Slack (MET) :             12.899ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.607ns  (logic 2.702ns (35.519%)  route 4.905ns (64.481%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.618     5.960    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X4Y24          LUT5 (Prop_lut5_I2_O)        0.124     6.084 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1/O
+                         net (fo=4, routed)           0.689     6.773    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1_n_0
+    SLICE_X2Y27          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X2Y27          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[0]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X2Y27          FDRE (Setup_fdre_C_CE)      -0.169    19.672    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         19.672    
+                         arrival time                          -6.773    
+  -------------------------------------------------------------------
+                         slack                                 12.899    
+
+Slack (MET) :             12.899ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.607ns  (logic 2.702ns (35.519%)  route 4.905ns (64.481%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.618     5.960    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X4Y24          LUT5 (Prop_lut5_I2_O)        0.124     6.084 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1/O
+                         net (fo=4, routed)           0.689     6.773    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1_n_0
+    SLICE_X2Y27          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X2Y27          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[3]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X2Y27          FDRE (Setup_fdre_C_CE)      -0.169    19.672    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[3]
+  -------------------------------------------------------------------
+                         required time                         19.672    
+                         arrival time                          -6.773    
+  -------------------------------------------------------------------
+                         slack                                 12.899    
+
+Slack (MET) :             12.911ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[7]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.558ns  (logic 2.702ns (35.748%)  route 4.856ns (64.252%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.497     6.724    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X1Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[7]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X1Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[7]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X1Y22          FDRE (Setup_fdre_C_CE)      -0.205    19.636    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[7]
+  -------------------------------------------------------------------
+                         required time                         19.636    
+                         arrival time                          -6.724    
+  -------------------------------------------------------------------
+                         slack                                 12.911    
+
+Slack (MET) :             12.937ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[1]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.569ns  (logic 2.702ns (35.700%)  route 4.867ns (64.300%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.507     6.735    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X0Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X0Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[1]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X0Y22          FDRE (Setup_fdre_C_CE)      -0.169    19.672    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[1]
+  -------------------------------------------------------------------
+                         required time                         19.672    
+                         arrival time                          -6.735    
+  -------------------------------------------------------------------
+                         slack                                 12.937    
+
+Slack (MET) :             12.937ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.569ns  (logic 2.702ns (35.700%)  route 4.867ns (64.300%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.507     6.735    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X0Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X0Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[3]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X0Y22          FDRE (Setup_fdre_C_CE)      -0.169    19.672    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[3]
+  -------------------------------------------------------------------
+                         required time                         19.672    
+                         arrival time                          -6.735    
+  -------------------------------------------------------------------
+                         slack                                 12.937    
+
+Slack (MET) :             12.937ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.569ns  (logic 2.702ns (35.700%)  route 4.867ns (64.300%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.507     6.735    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X0Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X0Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[4]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X0Y22          FDRE (Setup_fdre_C_CE)      -0.169    19.672    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[4]
+  -------------------------------------------------------------------
+                         required time                         19.672    
+                         arrival time                          -6.735    
+  -------------------------------------------------------------------
+                         slack                                 12.937    
+
+Slack (MET) :             13.063ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.439ns  (logic 2.702ns (36.323%)  route 4.737ns (63.677%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.435ns = ( 19.398 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.618     5.960    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X4Y24          LUT5 (Prop_lut5_I2_O)        0.124     6.084 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1/O
+                         net (fo=4, routed)           0.521     6.605    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state[3]_i_1_n_0
+    SLICE_X4Y25          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.638    19.398    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X4Y25          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[2]/C
+                         clock pessimism              0.577    19.975    
+                         clock uncertainty           -0.138    19.837    
+    SLICE_X4Y25          FDRE (Setup_fdre_C_CE)      -0.169    19.668    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/state_reg[2]
+  -------------------------------------------------------------------
+                         required time                         19.668    
+                         arrival time                          -6.605    
+  -------------------------------------------------------------------
+                         slack                                 13.063    
+
+Slack (MET) :             13.086ns  (required time - arrival time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[5]/CE
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.833ns  (clkout0 rise@20.833ns - clkout0 rise@0.000ns)
+  Data Path Delay:        7.420ns  (logic 2.702ns (36.417%)  route 4.718ns (63.583%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.431ns = ( 19.402 - 20.833 ) 
+    Source Clock Delay      (SCD):    -0.834ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.267ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.285     2.775    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.777    -0.834    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y8          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.620 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/DOADO[0]
+                         net (fo=25, routed)          3.598     5.218    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/DOADO[0]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I2_O)        0.124     5.342 r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/state[3]_i_4/O
+                         net (fo=2, routed)           0.761     6.103    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/data_reg_1
+    SLICE_X3Y24          LUT6 (Prop_lut6_I1_O)        0.124     6.227 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1/O
+                         net (fo=8, routed)           0.358     6.585    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount[7]_i_1_n_0
+    SLICE_X2Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   20.833    20.833 r  
+    Y9                                                0.000    20.833 r  clk_100 (IN)
+                         net (fo=0)                   0.000    20.833    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    22.253 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           1.162    23.415    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    15.977 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691    17.669    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    17.760 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         1.642    19.402    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X2Y22          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[5]/C
+                         clock pessimism              0.577    19.979    
+                         clock uncertainty           -0.138    19.841    
+    SLICE_X2Y22          FDRE (Setup_fdre_C_CE)      -0.169    19.672    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/bitcount_reg[5]
+  -------------------------------------------------------------------
+                         required time                         19.672    
+                         arrival time                          -6.585    
+  -------------------------------------------------------------------
+                         slack                                 13.086    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.071ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[9]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[13]
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.311ns  (logic 0.164ns (52.747%)  route 0.147ns (47.253%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.598ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.581    -0.598    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X8Y24          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y24          FDRE (Prop_fdre_C_Q)         0.164    -0.434 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[9]/Q
+                         net (fo=1, routed)           0.147    -0.287    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/ADDRARDADDR[9]
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.890    -0.794    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                         clock pessimism              0.253    -0.541    
+    RAMB18_X0Y8          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[13])
+                                                      0.183    -0.358    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg
+  -------------------------------------------------------------------
+                         required time                          0.358    
+                         arrival time                          -0.287    
+  -------------------------------------------------------------------
+                         slack                                  0.071    
+
+Slack (MET) :             0.096ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[7]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.281ns  (logic 0.128ns (45.554%)  route 0.153ns (54.446%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.582    -0.597    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X9Y23          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y23          FDRE (Prop_fdre_C_Q)         0.128    -0.469 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[7]/Q
+                         net (fo=1, routed)           0.153    -0.316    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/ADDRARDADDR[7]
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.890    -0.794    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                         clock pessimism              0.253    -0.541    
+    RAMB18_X0Y8          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[11])
+                                                      0.130    -0.411    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg
+  -------------------------------------------------------------------
+                         required time                          0.411    
+                         arrival time                          -0.316    
+  -------------------------------------------------------------------
+                         slack                                  0.096    
+
+Slack (MET) :             0.105ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[3]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.343ns  (logic 0.141ns (41.064%)  route 0.202ns (58.936%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.582    -0.597    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X9Y23          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y23          FDRE (Prop_fdre_C_Q)         0.141    -0.456 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[3]/Q
+                         net (fo=1, routed)           0.202    -0.253    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/ADDRARDADDR[3]
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.890    -0.794    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                         clock pessimism              0.253    -0.541    
+    RAMB18_X0Y8          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
+                                                      0.183    -0.358    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg
+  -------------------------------------------------------------------
+                         required time                          0.358    
+                         arrival time                          -0.253    
+  -------------------------------------------------------------------
+                         slack                                  0.105    
+
+Slack (MET) :             0.111ns  (arrival time - required time)
+  Source:                 lpms2_r/delay_line_reg[462]__0/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            lpms3_r/delay_line_reg[898]_srl15/D
+                            (rising edge-triggered cell SRL16E clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.240ns  (logic 0.148ns (61.706%)  route 0.092ns (38.294%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.793ns
+    Source Clock Delay      (SCD):    -0.556ns
+    Clock Pessimism Removal (CPR):    -0.237ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.623    -0.556    lpms2_r/CLK_48
+    SLICE_X4Y43          FDRE                                         r  lpms2_r/delay_line_reg[462]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y43          FDRE (Prop_fdre_C_Q)         0.148    -0.408 r  lpms2_r/delay_line_reg[462]__0/Q
+                         net (fo=9, routed)           0.092    -0.316    lpms3_r/delay_line[23]
+    SLICE_X4Y43          SRL16E                                       r  lpms3_r/delay_line_reg[898]_srl15/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.892    -0.793    lpms3_r/CLK_48
+    SLICE_X4Y43          SRL16E                                       r  lpms3_r/delay_line_reg[898]_srl15/CLK
+                         clock pessimism              0.237    -0.556    
+    SLICE_X4Y43          SRL16E (Hold_srl16e_CLK_D)
+                                                      0.129    -0.427    lpms3_r/delay_line_reg[898]_srl15
+  -------------------------------------------------------------------
+                         required time                          0.427    
+                         arrival time                          -0.316    
+  -------------------------------------------------------------------
+                         slack                                  0.111    
+
+Slack (MET) :             0.138ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[2]_srl5/D
+                            (rising edge-triggered cell SRL16E clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.268ns  (logic 0.141ns (52.559%)  route 0.127ns (47.441%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.800ns
+    Source Clock Delay      (SCD):    -0.562ns
+    Clock Pessimism Removal (CPR):    -0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.617    -0.562    Inst_adau1761_izedboard/Inst_i2s_data_interface/CLK_48
+    SLICE_X3Y32          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y32          FDRE (Prop_fdre_C_Q)         0.141    -0.421 r  Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[7]/Q
+                         net (fo=2, routed)           0.127    -0.293    Inst_adau1761_izedboard/Inst_i2s_data_interface/p_0_in[0]
+    SLICE_X2Y32          SRL16E                                       r  Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[2]_srl5/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.885    -0.800    Inst_adau1761_izedboard/Inst_i2s_data_interface/CLK_48
+    SLICE_X2Y32          SRL16E                                       r  Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[2]_srl5/CLK
+                         clock pessimism              0.251    -0.549    
+    SLICE_X2Y32          SRL16E (Hold_srl16e_CLK_D)
+                                                      0.117    -0.432    Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[2]_srl5
+  -------------------------------------------------------------------
+                         required time                          0.432    
+                         arrival time                          -0.293    
+  -------------------------------------------------------------------
+                         slack                                  0.138    
+
+Slack (MET) :             0.143ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[60]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[61]/D
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.277ns  (logic 0.186ns (67.123%)  route 0.091ns (32.877%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.792ns
+    Source Clock Delay      (SCD):    -0.555ns
+    Clock Pessimism Removal (CPR):    -0.250ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.624    -0.555    Inst_adau1761_izedboard/Inst_i2s_data_interface/CLK_48
+    SLICE_X7Y47          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[60]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y47          FDRE (Prop_fdre_C_Q)         0.141    -0.414 r  Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[60]/Q
+                         net (fo=1, routed)           0.091    -0.323    Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out[60]
+    SLICE_X6Y47          LUT4 (Prop_lut4_I3_O)        0.045    -0.278 r  Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out[61]_i_1/O
+                         net (fo=1, routed)           0.000    -0.278    Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out[61]_i_1_n_0
+    SLICE_X6Y47          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[61]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.893    -0.792    Inst_adau1761_izedboard/Inst_i2s_data_interface/CLK_48
+    SLICE_X6Y47          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[61]/C
+                         clock pessimism              0.250    -0.542    
+    SLICE_X6Y47          FDRE (Hold_fdre_C_D)         0.121    -0.421    Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_out_reg[61]
+  -------------------------------------------------------------------
+                         required time                          0.421    
+                         arrival time                          -0.278    
+  -------------------------------------------------------------------
+                         slack                                  0.143    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[6]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[10]
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.128ns (38.509%)  route 0.204ns (61.491%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.582    -0.597    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X9Y23          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y23          FDRE (Prop_fdre_C_Q)         0.128    -0.469 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[6]/Q
+                         net (fo=1, routed)           0.204    -0.264    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/ADDRARDADDR[6]
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.890    -0.794    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                         clock pessimism              0.253    -0.541    
+    RAMB18_X0Y8          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[10])
+                                                      0.129    -0.412    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg
+  -------------------------------------------------------------------
+                         required time                          0.412    
+                         arrival time                          -0.264    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.149ns  (arrival time - required time)
+  Source:                 Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[8]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[12]
+                            (rising edge-triggered cell RAMB18E1 clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.335ns  (logic 0.128ns (38.266%)  route 0.207ns (61.734%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.582    -0.597    Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/CLK_48
+    SLICE_X9Y23          FDRE                                         r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y23          FDRE (Prop_fdre_C_Q)         0.128    -0.469 r  Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[8]/Q
+                         net (fo=1, routed)           0.207    -0.262    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/ADDRARDADDR[8]
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.890    -0.794    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/CLK_48
+    RAMB18_X0Y8          RAMB18E1                                     r  Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+                         clock pessimism              0.253    -0.541    
+    RAMB18_X0Y8          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[12])
+                                                      0.130    -0.411    Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg
+  -------------------------------------------------------------------
+                         required time                          0.411    
+                         arrival time                          -0.262    
+  -------------------------------------------------------------------
+                         slack                                  0.149    
+
+Slack (MET) :             0.157ns  (arrival time - required time)
+  Source:                 lpms2_r/delay_line_reg[435]__0/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            lpms3_r/delay_line_reg[870]_srl15/D
+                            (rising edge-triggered cell SRL16E clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.275ns  (logic 0.164ns (59.651%)  route 0.111ns (40.349%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.795ns
+    Source Clock Delay      (SCD):    -0.558ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.621    -0.558    lpms2_r/CLK_48
+    SLICE_X6Y38          FDRE                                         r  lpms2_r/delay_line_reg[435]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y38          FDRE (Prop_fdre_C_Q)         0.164    -0.394 r  lpms2_r/delay_line_reg[435]__0/Q
+                         net (fo=2, routed)           0.111    -0.283    lpms3_r/delay_line[0]
+    SLICE_X4Y38          SRL16E                                       r  lpms3_r/delay_line_reg[870]_srl15/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.890    -0.795    lpms3_r/CLK_48
+    SLICE_X4Y38          SRL16E                                       r  lpms3_r/delay_line_reg[870]_srl15/CLK
+                         clock pessimism              0.253    -0.542    
+    SLICE_X4Y38          SRL16E (Hold_srl16e_CLK_D)
+                                                      0.102    -0.440    lpms3_r/delay_line_reg[870]_srl15
+  -------------------------------------------------------------------
+                         required time                          0.440    
+                         arrival time                          -0.283    
+  -------------------------------------------------------------------
+                         slack                                  0.157    
+
+Slack (MET) :             0.159ns  (arrival time - required time)
+  Source:                 lpms2_l/delay_line_reg[436]__0/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            lpms3_l/delay_line_reg[871]_srl15/D
+                            (rising edge-triggered cell SRL16E clocked by clkout0  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.284ns  (logic 0.164ns (57.771%)  route 0.120ns (42.229%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.823ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.440     0.698    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.722 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.204    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.178 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.593    -0.586    lpms2_l/CLK_48
+    SLICE_X10Y42         FDRE                                         r  lpms2_l/delay_line_reg[436]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y42         FDRE (Prop_fdre_C_Q)         0.164    -0.422 r  lpms2_l/delay_line_reg[436]__0/Q
+                         net (fo=4, routed)           0.120    -0.302    lpms3_l/delay_line[1]
+    SLICE_X10Y41         SRL16E                                       r  lpms3_l/delay_line_reg[871]_srl15/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk_100 (IN)
+                         net (fo=0)                   0.000     0.000    i_clocking/clk_100
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  i_clocking/clkin1_buf/O
+                         net (fo=1, routed)           0.480     0.926    i_clocking/clkin1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.278 r  i_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.714    i_clocking/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.685 r  i_clocking/clkout1_buf/O
+                         net (fo=701, routed)         0.862    -0.823    lpms3_l/CLK_48
+    SLICE_X10Y41         SRL16E                                       r  lpms3_l/delay_line_reg[871]_srl15/CLK
+                         clock pessimism              0.253    -0.570    
+    SLICE_X10Y41         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.109    -0.461    lpms3_l/delay_line_reg[871]_srl15
+  -------------------------------------------------------------------
+                         required time                          0.461    
+                         arrival time                          -0.302    
+  -------------------------------------------------------------------
+                         slack                                  0.159    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkout0
+Waveform(ns):       { 0.000 10.417 }
+Period(ns):         20.833
+Sources:            { i_clocking/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         20.833      18.257     RAMB18_X0Y8      Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg/CLKARDCLK
+Min Period        n/a     BUFG/I              n/a            2.155         20.833      18.678     BUFGCTRL_X0Y0    i_clocking/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         20.833      19.584     MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDCE/C              n/a            1.000         20.833      19.833     SLICE_X8Y23      Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg_cooolgate_en_gate_1_cooolDelFlop/C
+Min Period        n/a     FDCE/C              n/a            1.000         20.833      19.833     SLICE_X8Y23      Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg_cooolgate_en_gate_2_cooolDelFlop/C
+Min Period        n/a     FDRE/C              n/a            1.000         20.833      19.833     SLICE_X1Y23      Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_sda_t_reg/C
+Min Period        n/a     FDRE/C              n/a            1.000         20.833      19.833     SLICE_X1Y24      Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/i2c_started_reg/C
+Min Period        n/a     FDRE/C              n/a            1.000         20.833      19.833     SLICE_X12Y49     Inst_adau1761_izedboard/Inst_i2s_data_interface/audio_l_out_reg[18]/C
+Min Period        n/a     FDRE/C              n/a            1.000         20.833      19.833     SLICE_X12Y49     Inst_adau1761_izedboard/Inst_i2s_data_interface/audio_l_out_reg[19]/C
+Min Period        n/a     FDRE/C              n/a            1.000         20.833      19.833     SLICE_X12Y40     Inst_adau1761_izedboard/Inst_i2s_data_interface/audio_l_out_reg[1]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       20.833      192.527    MMCME2_ADV_X0Y0  i_clocking/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[174]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[175]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[176]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[177]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[178]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[179]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[180]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[181]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X6Y38      lpms2_r/delay_line_reg[408]_srl7/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X6Y38      lpms2_r/delay_line_reg[409]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X2Y32      Inst_adau1761_izedboard/Inst_i2s_data_interface/bclk_delay_reg[2]_srl5/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.417      9.437      SLICE_X4Y34      Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_in_reg[31]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.417      9.437      SLICE_X4Y34      Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_in_reg[63]_srl32/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X4Y34      Inst_adau1761_izedboard/Inst_i2s_data_interface/sr_in_reg[70]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[174]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[175]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[176]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[177]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[178]_srl7/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X8Y42      lpms1_l/delay_line_reg[179]_srl7/CLK
+
+
+
