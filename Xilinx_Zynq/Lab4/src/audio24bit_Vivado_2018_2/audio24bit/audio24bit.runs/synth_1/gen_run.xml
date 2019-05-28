@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1556599084">
+  <File Type="PA-TCL" Name="adau1761_test.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="adau1761_test_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="adau1761_test_reports.tcl"/>
+  <File Type="RDS-RDS" Name="adau1761_test.vds"/>
+  <File Type="RDS-UTIL" Name="adau1761_test_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="adau1761_test_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="adau1761_test.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="adau1761_test_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="adau1761_test_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i3c2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i3c2.vhd"/>
+        <Attr Name="ImportTime" Val="1389763382"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/adau1761_configuraiton_data.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/adau1761_configuraiton_data.vhd"/>
+        <Attr Name="ImportTime" Val="1390110294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i2s_data_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i2s_data_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1390166356"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i2c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i2c.vhd"/>
+        <Attr Name="ImportTime" Val="1390050826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/ADAU1761_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/ADAU1761_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1390050694"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/low_pass_moving_sum.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/low_pass_moving_sum.vhd"/>
+        <Attr Name="ImportTime" Val="1390149412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/dsp_block.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/dsp_block.vhd"/>
+        <Attr Name="ImportTime" Val="1390164568"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/clocking.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1389073854"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/adau1761_izedboard.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/adau1761_izedboard.vhd"/>
+        <Attr Name="ImportTime" Val="1390164598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/adau1761_test.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/adau1761_test.vhd"/>
+        <Attr Name="ImportTime" Val="1399412276"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i3c2program">
+      <FileInfo SFType="TXT">
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i3c2program"/>
+        <Attr Name="ImportTime" Val="1390110972"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7seg/import_ise_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../audio24bit_7seg/import_ise_summary.txt"/>
+        <Attr Name="ImportTime" Val="1429224822"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="adau1761_test"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/ss2015/dsp_prj_migrated.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../a_fh_laufwerk/lab_Design_Test/lab1/ss2015/dsp_prj_migrated.xdc"/>
+        <Attr Name="ImportTime" Val="1425665858"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/ss2015/dsp_prj_migrated.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

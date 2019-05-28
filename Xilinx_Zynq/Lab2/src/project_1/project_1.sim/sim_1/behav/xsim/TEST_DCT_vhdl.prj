@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/DCT8AAN1.vhd" \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/DCT8AAN2.vhd" \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/DCT_AAN.vhd" \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/DCT_BUF.vhd" \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/bmp_generator.vhd" \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/dct_beh.vhd" \
+"../../../../project_1.srcs/sources_1/imports/DCT_IP_VHDL_Testbench/test_dct.vhd" \
+
+# Do not sort compile order
+nosort

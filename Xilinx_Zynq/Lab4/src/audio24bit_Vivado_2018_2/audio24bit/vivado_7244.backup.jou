@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Apr 20 20:26:51 2015
+# Process ID: 7244
+# Log file: C:/Users/Schumann/FH/Zedboard_labDesignTest/audio/Audio_Vivado20142/audio24bit/vivado.log
+# Journal file: C:/Users/Schumann/FH/Zedboard_labDesignTest/audio/Audio_Vivado20142/audio24bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Schumann\FH\Zedboard_labDesignTest\audio\Audio_Vivado20142\audio24bit\audio24bit.xpr}
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="C:/Users/Schumann3/h_da/Vivado_2018_2_projects/lab1_DesignTest_audio_2018_2/audio24bit/audio24bit/audio24bit.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
