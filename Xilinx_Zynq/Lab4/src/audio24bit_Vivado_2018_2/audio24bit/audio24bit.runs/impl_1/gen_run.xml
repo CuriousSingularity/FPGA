@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1556599116">
+  <File Type="BITSTR-BMM" Name="adau1761_test_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="adau1761_test_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="adau1761_test_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="adau1761_test_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="adau1761_test.tcl"/>
+  <File Type="OPT-TIMING" Name="adau1761_test_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="adau1761_test_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="adau1761_test_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="adau1761_test_reports.tcl"/>
+  <File Type="OPT-DRC" Name="adau1761_test_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="adau1761_test.hwdef"/>
+  <File Type="PWROPT-DCP" Name="adau1761_test_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="adau1761_test_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="adau1761_test_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="adau1761_test_placed.dcp"/>
+  <File Type="PLACE-IO" Name="adau1761_test_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="adau1761_test_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="adau1761_test_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="adau1761_test_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="adau1761_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="adau1761_test_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="adau1761_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="adau1761_test.bgn"/>
+  <File Type="PLACE-TIMING" Name="adau1761_test_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="adau1761_test_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="adau1761_test.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="adau1761_test_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="adau1761_test_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="adau1761_test_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="adau1761_test.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="adau1761_test_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="adau1761_test_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="adau1761_test_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="adau1761_test_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="adau1761_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="adau1761_test_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="adau1761_test.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="adau1761_test_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="adau1761_test.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="adau1761_test_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="adau1761_test_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="adau1761_test.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="adau1761_test_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="adau1761_test_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="adau1761_test_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="adau1761_test_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="adau1761_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="adau1761_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="adau1761_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="adau1761_test_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="adau1761_test_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="adau1761_test_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="adau1761_test_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="adau1761_test_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="adau1761_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="adau1761_test_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="adau1761_test_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="adau1761_test_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="adau1761_test_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="adau1761_test_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="adau1761_test_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="adau1761_test.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="adau1761_test_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="adau1761_test.rbt"/>
+  <File Type="BITSTR-NKY" Name="adau1761_test.nky"/>
+  <File Type="BG-DRC" Name="adau1761_test.drc"/>
+  <File Type="RDI-RDI" Name="adau1761_test.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i3c2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i3c2.vhd"/>
+        <Attr Name="ImportTime" Val="1389763382"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/adau1761_configuraiton_data.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/adau1761_configuraiton_data.vhd"/>
+        <Attr Name="ImportTime" Val="1390110294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i2s_data_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i2s_data_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1390166356"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i2c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i2c.vhd"/>
+        <Attr Name="ImportTime" Val="1390050826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/ADAU1761_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/ADAU1761_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1390050694"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/low_pass_moving_sum.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/low_pass_moving_sum.vhd"/>
+        <Attr Name="ImportTime" Val="1390149412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/dsp_block.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/dsp_block.vhd"/>
+        <Attr Name="ImportTime" Val="1390164568"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/clocking.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1389073854"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/adau1761_izedboard.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/adau1761_izedboard.vhd"/>
+        <Attr Name="ImportTime" Val="1390164598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/adau1761_test.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/adau1761_test.vhd"/>
+        <Attr Name="ImportTime" Val="1399412276"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7Seg/i3c2program">
+      <FileInfo SFType="TXT">
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../audio24bit_7Seg/i3c2program"/>
+        <Attr Name="ImportTime" Val="1390110972"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio24bit_7seg/import_ise_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../audio24bit_7seg/import_ise_summary.txt"/>
+        <Attr Name="ImportTime" Val="1429224822"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="adau1761_test"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/ss2015/dsp_prj_migrated.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../a_fh_laufwerk/lab_Design_Test/lab1/ss2015/dsp_prj_migrated.xdc"/>
+        <Attr Name="ImportTime" Val="1425665858"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/ss2015/dsp_prj_migrated.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
