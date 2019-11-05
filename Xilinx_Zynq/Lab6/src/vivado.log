@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 18 10:09:48 2019
+# Process ID: 8860
+# Current directory: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3
+# Command line: vivado.exe -mode batch -source _vivado_program.cmd
+# Log file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/vivado.log
+# Journal file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3\vivado.jou
+#-----------------------------------------------------------
+source _vivado_program.cmd
+# set chain_position 1
+# open_hw
+# connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248657885
+# current_hw_device [lindex [get_hw_devices] $chain_position]
+# refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] $chain_position]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+# set_property PROGRAM.FILE {D:\HDA\2_sem\DesignAndTestOfMicroelectronics\Lab\Lab3\Streaming_2_D_FIR_Filter_fil\Streaming_2_D_FIR_Filter_fil.bit} [lindex [get_hw_devices] $chain_position]
+# program_hw_devices [lindex [get_hw_devices] $chain_position]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# disconnect_hw_server
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 18 10:10:04 2019...

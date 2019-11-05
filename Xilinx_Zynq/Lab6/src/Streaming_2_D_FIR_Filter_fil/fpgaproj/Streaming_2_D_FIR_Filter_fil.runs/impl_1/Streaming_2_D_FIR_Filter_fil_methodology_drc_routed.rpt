@@ -1,0 +1,617 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Jun 18 09:57:12 2019
+| Host         : Windows-Desktop-Dell running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Streaming_2_D_FIR_Filter_fil_methodology_drc_routed.rpt -pb Streaming_2_D_FIR_Filter_fil_methodology_drc_routed.pb -rpx Streaming_2_D_FIR_Filter_fil_methodology_drc_routed.rpx
+| Design       : Streaming_2_D_FIR_Filter_fil
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 114
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| DPIR-1    | Warning  | Asynchronous driver check                              | 8          |
+| LUTAR-1   | Warning  | LUT drives async reset alert                           | 1          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain        | 2          |
+| SYNTH-9   | Warning  | Small multiplier                                       | 92         |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                     | 6          |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint   | 2          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4] input pin u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Product_mul_temp[4]/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell u_jtag_mac/u_simcycle_fifo_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][0]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][1]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][2]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][3]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][4]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][5]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][6]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[0][7]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][0]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][1]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][2]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][3]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][4]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][5]/CLR, u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay10_reg_reg[1][6]/CLR (the first 15 of 607 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X66Y37 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X93Y31 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][11]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][11]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][11]_i_4 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][11]_i_5 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][23]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][23]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#7 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][23]_i_9 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#8 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][3]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#9 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][7]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#10 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[0][7]_i_2 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#11 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][11]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#12 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][11]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#13 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][11]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#14 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][15]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#15 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][15]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#16 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][15]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#17 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][15]_i_12 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#18 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][23]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#19 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][23]_i_8 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#20 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][3]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#21 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][3]_i_2 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#22 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][7]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#23 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[1][7]_i_9 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#24 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][11]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#25 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][11]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#26 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][11]_i_4 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#27 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][11]_i_5 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#28 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][23]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#29 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][23]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#30 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][23]_i_9 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#31 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][3]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#32 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][7]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#33 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[2][7]_i_2 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#34 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][11]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#35 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][11]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#36 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][11]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#37 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][15]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#38 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][15]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#39 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][15]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#40 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][15]_i_12 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#41 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][23]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#42 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][23]_i_8 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#43 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][3]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#44 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][3]_i_2 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#45 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][7]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#46 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[3][7]_i_9 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#47 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][11]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#48 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][11]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#49 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][11]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#50 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][15]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#51 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][15]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#52 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][15]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#53 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][15]_i_12 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#54 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][23]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#55 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][23]_i_8 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#56 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][3]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#57 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][3]_i_2 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#58 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][7]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#59 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[5][7]_i_9 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#60 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][11]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#61 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][11]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#62 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][11]_i_4 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#63 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][11]_i_5 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#64 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][23]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#65 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][23]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#66 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][23]_i_9 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#67 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][3]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#68 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][7]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#69 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[6][7]_i_2 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#70 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][11]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#71 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][11]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#72 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][11]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#73 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][15]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#74 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][15]_i_10 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#75 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][15]_i_11 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#76 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][15]_i_12 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#77 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][23]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#78 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][23]_i_8 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#79 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][3]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#80 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][3]_i_2 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#81 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][7]_i_1 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#82 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[7][7]_i_9 of size 10x9, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#83 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][11]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#84 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][11]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#85 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][11]_i_4 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#86 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][11]_i_5 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#87 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][23]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#88 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][23]_i_10 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#89 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][23]_i_9 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#90 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][3]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#91 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][7]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#92 Warning
+Small multiplier  
+Detected multiplier at u_mwfil_chiftop/u_dut/u_Streaming_2_D_FIR_Filter/Unit_Delay2_out1_reg[8][7]_i_2 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 11). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 15). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 9). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 13). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 17). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 7). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name sysclk -waveform {0.000 5.000} [get_ports sysclk] (Source: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/filsrc/Streaming_2_D_FIR_Filter_fil.xdc (Line: 1))
+Previous: create_clock -period 10.000 [get_ports sysclk] (Source: d:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/fpgaproj/Streaming_2_D_FIR_Filter_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name sysclk -waveform {0.000 5.000} [get_ports sysclk] (Source: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/filsrc/Streaming_2_D_FIR_Filter_fil.xdc (Line: 1))
+Previous: create_clock -period 10.000 [get_ports sysclk] (Source: d:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/fpgaproj/Streaming_2_D_FIR_Filter_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+

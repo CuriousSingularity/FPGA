@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 18 09:49:51 2019
+# Process ID: 12844
+# Current directory: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/fpgaproj/Streaming_2_D_FIR_Filter_fil.runs/simcycle_fifo_synth_1
+# Command line: vivado.exe -log simcycle_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source simcycle_fifo.tcl
+# Log file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/fpgaproj/Streaming_2_D_FIR_Filter_fil.runs/simcycle_fifo_synth_1/simcycle_fifo.vds
+# Journal file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab3/Streaming_2_D_FIR_Filter_fil/fpgaproj/Streaming_2_D_FIR_Filter_fil.runs/simcycle_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source simcycle_fifo.tcl -notrace
