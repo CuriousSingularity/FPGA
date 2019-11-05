@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 28 09:29:44 2019
+# Process ID: 5884
+# Current directory: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab2/hdl_prj/ipcore/led_count_ip_v1_0/prj_ip
+# Command line: vivado.exe -mode batch -notrace -source vivado_ip_package.tcl
+# Log file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab2/hdl_prj/ipcore/led_count_ip_v1_0/prj_ip/vivado.log
+# Journal file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab2/hdl_prj/ipcore/led_count_ip_v1_0/prj_ip\vivado.jou
+#-----------------------------------------------------------
+source vivado_ip_package.tcl -notrace

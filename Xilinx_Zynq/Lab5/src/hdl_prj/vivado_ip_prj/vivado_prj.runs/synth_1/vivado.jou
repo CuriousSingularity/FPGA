@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 28 10:46:21 2019
+# Process ID: 12576
+# Current directory: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab2/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1
+# Command line: vivado.exe -log system_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_wrapper.tcl
+# Log file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab2/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/system_top_wrapper.vds
+# Journal file: D:/HDA/2_sem/DesignAndTestOfMicroelectronics/Lab/Lab2/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_top_wrapper.tcl -notrace
