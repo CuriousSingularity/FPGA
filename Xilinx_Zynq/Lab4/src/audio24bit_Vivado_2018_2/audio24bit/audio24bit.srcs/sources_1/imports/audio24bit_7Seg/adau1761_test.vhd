@@ -115,7 +115,7 @@ process(clk_48)
       if rising_edge(clk_48) then
          sw_synced <= sw;
 			-------------------make your changes here
-			segsel<='X'; -- define the segment (cathode)
+			segsel<='1'; -- define the segment (cathode)
 			case sw is
 			WHEN "00000000"=>seg<="0111111"; -- 0
 			WHEN "00000001"=>seg<="0000110"; -- 1
